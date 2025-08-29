@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1f25"/>
+      <stop offset="100%" stop-color="#0f1215"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#3ac27b" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#3ac27b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g1)"/>
+  <circle cx="1080" cy="140" r="420" fill="url(#glow)"/>
+  <!-- Abstract paw print -->
+  <g fill="#2b8d5a" fill-opacity=".6">
+    <circle cx="420" cy="520" r="36"/>
+    <circle cx="520" cy="520" r="36"/>
+    <circle cx="470" cy="470" r="32"/>
+    <path d="M460 560c0-36 24-56 56-56s56 20 56 56-24 64-56 64-56-28-56-64z" fill-opacity=".45"/>
+  </g>
+  <!-- Soft waves -->
+  <path d="M0,780 C240,720 480,840 720,800 C960,760 1200,820 1440,780 L1440,900 L0,900 Z" fill="#122017" fill-opacity=".6"/>
+</svg>
