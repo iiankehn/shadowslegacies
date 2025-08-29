@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Shadow's Legacies</title>
+  <meta name="description" content="Book pet sitting, drop-in visits, dog walking, and overnight care with Shadow's Legacies.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 14c0-4 3-6 6-6s6 2 6 6-3 7-6 7-6-3-6-7z" fill="#0f1215"/><circle cx="10" cy="9" r="2" fill="#0f1215"/><circle cx="14" cy="8" r="1.7" fill="#0f1215"/></svg>
+        </span>
+        <span>Shadow's Legacies</span>
+      </a>
+      <nav class="nav-links" aria-label="primary">
+        <a href="/services.html" aria-current="page">Services</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="#booking">Book Now</a>
+      </nav>
+      <button class="btn btn-outline hamburger" data-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+      <div class="container">
+        <a href="/services.html">Services</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" style="display:block; margin: 1rem 0;" href="#booking">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Services</h1>
+      <p class="small">Transparent pricing. Easy booking. Outstanding communication.</p>
+
+      <div class="grid grid-3" style="margin-top: 1.2rem;">
+        <article class="card">
+          <h3>Drop‑In Visit</h3>
+          <p>20–30 minute visit for feeding, water refresh, litter or potty break, and playtime.</p>
+          <div class="small">From $20 / visit</div>
+          <a class="btn btn-primary" href="#booking">Book Drop‑In</a>
+        </article>
+        <article class="card">
+          <h3>Dog Walking</h3>
+          <p>Neighborhood walk with photo updates and route tracking.</p>
+          <div class="small">From $22 / walk</div>
+          <a class="btn btn-primary" href="#booking">Book Walk</a>
+        </article>
+        <article class="card">
+          <h3>Overnight Sitting</h3>
+          <p>Stay in your home for consistency and peace of mind.</p>
+          <div class="small">From $75 / night</div>
+          <a class="btn btn-primary" href="#booking">Book Overnight</a>
+        </article>
+      </div>
+
+      <section id="booking" class="section">
+        <h2>Book Now</h2>
+        <p class="small">Complete this request and we'll confirm by email. <strong>Tip:</strong> Replace the email in <code>js/main.js</code> with your business address, or integrate Calendly / Google Calendar (see README).</p>
+        <form id="booking-form" class="card" aria-labelledby="booking">
+          <div class="form-row">
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="Drop-In Visit">Drop‑In Visit</option>
+                <option value="Dog Walking">Dog Walking</option>
+                <option value="Overnight Sitting">Overnight Sitting</option>
+              </select>
+            </div>
+            <div>
+              <label for="date">Preferred Date</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label for="time">Preferred Time</label>
+              <input id="time" name="time" type="time" required>
+            </div>
+            <div>
+              <label for="petType">Pet Type</label>
+              <input id="petType" name="petType" placeholder="Dog, Cat, etc." required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label for="petName">Pet Name</label>
+              <input id="petName" name="petName" placeholder="Shadow">
+            </div>
+            <div>
+              <label for="name">Your Name</label>
+              <input id="name" name="name" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="(555) 555‑5555">
+            </div>
+          </div>
+
+          <div>
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Feeding schedule, meds, alarms, door codes, etc."></textarea>
+          </div>
+
+          <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top: .6rem;">
+            <button class="btn btn-primary" type="submit">Send Request</button>
+            <a class="btn btn-outline" href="https://calendly.com/" target="_blank" rel="noopener">Use Calendly</a>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container small" style="padding: 1rem 0;">
+      © <span id="year"></span> Shadow's Legacies
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shadow's Legacies — Trusted Pet Sitting</title>
+  <meta name="description" content="Shadow's Legacies offers exceptional, reliable pet sitting for loving pet parents. Book trusted sitters with standout customer service.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 14c0-4 3-6 6-6s6 2 6 6-3 7-6 7-6-3-6-7z" fill="#0f1215"/><circle cx="10" cy="9" r="2" fill="#0f1215"/><circle cx="14" cy="8" r="1.7" fill="#0f1215"/></svg>
+        </span>
+        <span>Shadow's Legacies</span>
+      </a>
+      <nav class="nav-links" aria-label="primary">
+        <a href="/services.html">Services</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" href="/services.html">Book Now</a>
+      </nav>
+      <button class="btn btn-outline hamburger" data-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+      <div class="container">
+        <a href="/services.html">Services</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" style="display:block; margin: 1rem 0;" href="/services.html">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" role="banner" aria-label="Full-screen hero image of abstract paw print">
+      <div class="content container">
+        <div class="badges">
+          <span class="badge">Insured</span>
+          <span class="badge">Background-Checked</span>
+          <span class="badge">Pet CPR & First Aid</span>
+        </div>
+        <h1>Loving care for your pets—<span class="tag">on your schedule</span>.</h1>
+        <p>We treat your pets like family while you work, travel, or take a well‑earned break. Trusted sitters. Clear communication. 5‑star service.</p>
+        <div style="display:flex; gap:.6rem; justify-content:center; flex-wrap: wrap; margin-top:1rem;">
+          <a class="btn btn-primary" href="/services.html">Book Now</a>
+          <a class="btn btn-outline" href="/about.html">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card">
+          <h3>Drop‑In Visits</h3>
+          <p>Short visits for feeding, litter boxes, walks, meds, and extra snuggles—perfect for daily routines.</p>
+        </article>
+        <article class="card">
+          <h3>Overnight Sitting</h3>
+          <p>In‑home, overnight care to keep your pets calm and your home secure.</p>
+        </article>
+        <article class="card">
+          <h3>Dog Walking</h3>
+          <p>Reliable, trackable walks so your pup gets the exercise and enrichment they deserve.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div>
+        <strong>Shadow's Legacies</strong>
+        <p class="small">Exceptional customer service for pet parents. Serving your neighborhood with care and integrity.</p>
+      </div>
+      <div>
+        <div class="small">Email</div>
+        <a href="mailto:bookings@shadowslegacies.example">bookings@shadowslegacies.example</a>
+      </div>
+      <div>
+        <div class="small">Follow</div>
+        <a href="#" aria-label="Instagram">Instagram</a><br>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+    <div class="container small" style="padding: .8rem 0; border-top: 1px solid rgba(255,255,255,.08);">
+      © <span id="year"></span> Shadow's Legacies. All rights reserved.
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

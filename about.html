@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Shadow's Legacies</title>
+  <meta name="description" content="Meet the team behind Shadow's Legacies — dedicated pet lovers delivering exceptional service.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 14c0-4 3-6 6-6s6 2 6 6-3 7-6 7-6-3-6-7z" fill="#0f1215"/><circle cx="10" cy="9" r="2" fill="#0f1215"/><circle cx="14" cy="8" r="1.7" fill="#0f1215"/></svg>
+        </span>
+        <span>Shadow's Legacies</span>
+      </a>
+      <nav class="nav-links" aria-label="primary">
+        <a href="/services.html">Services</a>
+        <a href="/about.html" aria-current="page">About</a>
+        <a class="btn btn-primary" href="/services.html">Book Now</a>
+      </nav>
+      <button class="btn btn-outline hamburger" data-menu-btn aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+      <div class="container">
+        <a href="/services.html">Services</a>
+        <a href="/about.html">About</a>
+        <a class="btn btn-primary" style="display:block; margin: 1rem 0;" href="/services.html">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid" style="gap: 1.5rem;">
+      <section class="card">
+        <h1>Our Story</h1>
+        <p>Shadow’s Legacies was founded to honor the pets who’ve shaped our lives — like Shadow, the loyal companion who inspired our name. We’re obsessed with <strong>exceptional customer service</strong> for pet parents and <strong>gentle, attentive care</strong> for their animals.</p>
+      </section>
+
+      <section class="grid grid-3">
+        <article class="card">
+          <h3>Communication First</h3>
+          <p>Photo updates, clear scheduling, and fast responses — so you’re never in the dark.</p>
+        </article>
+        <article class="card">
+          <h3>Trust & Safety</h3>
+          <p>Background‑checked, insured, and trained in Pet CPR & First Aid.</p>
+        </article>
+        <article class="card">
+          <h3>Your Pet, Your Routine</h3>
+          <p>We follow your instructions to the letter — routines reduce stress and keep pets happy.</p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Service Area</h2>
+        <p class="small">List neighborhoods or cities you serve. Add a map or coverage graphic if you like.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container small" style="padding: 1rem 0;">
+      © <span id="year"></span> Shadow's Legacies
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
