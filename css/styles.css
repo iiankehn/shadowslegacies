@@ -68,7 +68,7 @@ header {
 .hero::before {
   content: "";
   position: absolute; inset: 0;
-  background: url('/assets/hero.svg') center/cover no-repeat;
+  background: url('/assets/IMG_3292.png') center/cover no-repeat;
   filter: contrast(1.1) saturate(1.1) brightness(.6);
   opacity: .65;
 }
